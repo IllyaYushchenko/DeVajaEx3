@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS For Beginners</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+
+    
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>DeVaja exercise 3</h1>
+    </header>
+
+    <section class="container">
+      <canvas id="lightpanel" width="200" height="200"></canvas>
+
+      <input class="btn" type="button" value="Save" onclick="openForm()" />
+
+      <img src="./images/ledOn.jpg" alt="" id="ledOn" style="display: none;" />
+      <img src="./images/ledOff.jpg"alt=""id="ledOff"style="display: none;"/>
+    </section>
+
+    <section class="container" id="popup">
+      <form class="my-form">
+        <h1>Give a name for your new emoji ^^</h1>
+        <div class="msg"></div>
+        <div>
+          <label>Name:</label>
+          <input type="text" id="name" />
+        </div>
+
+        <input class="btn" type="button" value="Ok" onclick="upload()" />
+        <input class="btn" type="button" value="Cancel" onclick="closeForm()" />
+      </form>
+    </section>
+    <div class="l-wrap">
+      <div class="three-col-grid">
+        
+      </div>
+    </div>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAHzxVurzCEg6moGHg0eATSI0KdjjpSLrg",
+        authDomain: "devaja-1e743.firebaseapp.com",
+        databaseURL: "https://devaja-1e743.firebaseio.com",
+        projectId: "devaja-1e743",
+        storageBucket: "devaja-1e743.appspot.com",
+        messagingSenderId: "525966379660",
+        appId: "1:525966379660:web:82440b92c769d597e3c9a9"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </body>
+</html>
